@@ -17,8 +17,7 @@ header {
 }
 
 header h1 {
-  width: screen;
-  display: flex;
+  width: 100%;
   padding: 50px;
   margin: auto;
   color: rgb(255, 134, 245);
@@ -30,7 +29,8 @@ header h1 {
   display: flex;
 }
 
-.links nav {
+.links {
+  width:100%;
   padding-top: 15px;
   margin: auto;
   color: rgb(238, 128, 248);
@@ -38,11 +38,13 @@ header h1 {
   font-size: 20px;
 }
 
-.links nav ul {
+.links ul {
   list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.links nav ul li {
+.links ul li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -77,7 +79,7 @@ header h1 {
   display: flex;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
-  background-image: url(https://wallpaperaccess.com/full/3819326.jpg);
+  background-color: black;
   padding: 20px 5%;
 }
 
@@ -176,7 +178,6 @@ header h1 {
 }
 
 .contact nav {
-  display: flex;
   padding-top: 15px;
   margin: auto;
   color: rgb(253, 153, 240);
@@ -186,11 +187,16 @@ header h1 {
 
 .contact nav ul {
   list-style-type: none;
+  display: flex;
 }
 
 .contact nav ul li {
   display: inline;
   margin-left: 25px;
+  white-space:nowrap;
+}
+.contact nav ul li a{
+  white-space:nowrap;
 }
 
 /* Styling for Footer Section */
@@ -199,13 +205,13 @@ Footer {
   font-size: 40px;
   color: black;
 }
-/* Media Query for formatiing on different viewports 
+/*Media Query for formatiing on different viewports */
 
 @media (max-width: 700px) {
     .links li {
        flex-direction: column; 
     }
-}  */ 
+} 
 @media (max-width: 700px) {
   .bioArea {
     flex-direction: column;
@@ -227,6 +233,9 @@ Footer {
     border-right: none;
     border-bottom: 5px solid white;
   }
+  .project div{
+    width:90%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -238,8 +247,15 @@ Footer {
 
 @media (max-width: 1100px) {
   .contact {
-    flex-direction: column;
-  }
+    flex-direction: column;}
+    .contact ul{
+      flex-direction: column;
+      flex-wrap: wrap;}
+    .contact ul li{
+      width: 100%;
+      text-align: center;
+    }
+
   .contact h2 {
     text-align: center;
     min-width: 90%;
