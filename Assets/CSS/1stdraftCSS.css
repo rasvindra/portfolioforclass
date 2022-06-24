@@ -1,230 +1,249 @@
+/* Universal and broad styles */
 body {
-    background:rgb(253, 146, 239);
+  background:black;
 }
 
-a { 
-    font-size: 28px;
+a {
+  font-size: 28px;
 }
 
 p {
-    font-size:22PX;
-    color:rgb(253, 153, 240);
+  font-size: 22px;
+  color: rgb(253, 153, 240);
 }
-
+/* Header Styling Section */
 header {
-    text-align: center;
-    margin:auto
+  margin: auto;
 }
 
-header h1  { 
-    width:screen;
-    display:flex;
-    padding: 50px;
-    margin:auto;
-    color:black;
-    font-size: 60px;
-    text-align:center;
+header h1 {
+  width: screen;
+  display: flex;
+  padding: 50px;
+  margin: auto;
+  color: rgb(255, 134, 245);
+  font-size: 60px;
+  text-align: center;
 }
-
+/* Quick Links to Specific Spots on my Page */
 .links {
-    display: flex;
+  display: flex;
 }
 
 .links nav {
-    padding-top: 15px;
-    margin:auto;
-    color:black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+  padding-top: 15px;
+  margin: auto;
+  color: rgb(238, 128, 248);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 .links nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .links nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
 }
-
+/* Styling for Biography Section */
 .bioArea {
-    display:flex;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    background-image: url(https://www.informationng.com/wp-content/uploads/2016/05/l_119938_063446_updates.jpg);
-    background-repeat:no-repeat;
-    background-size:auto;
-    background-color: black;
-    padding: 0 5%;
+  display: flex;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  background-image: url(https://www.informationng.com/wp-content/uploads/2016/05/l_119938_063446_updates.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: black;
+  padding: 0 5%;
 }
 .bioArea h2 {
-    min-width: 20%;
-    border-right: 5px solid white;
-    margin:15px;
-    text-align: right;
-    padding-right: 15px;
+  min-width: 20%;
+  border-right: 5px solid white;
+  margin: 15px;
+  text-align: right;
+  padding-right: 15px;
 }
 
-
-.bioArea div{
-    padding-left: 15px;
-    margin: 15px;
-    font-style:bold;
-    min-width: 75%;
+.bioArea div {
+  padding-left: 15px;
+  margin: 15px;
+  font-style: bold;
+  min-width: 75%;
 }
-
+/* Styling for Project section */
 .work {
-    display:flex;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    background-image: url(https://wallpaperaccess.com/full/3819326.jpg);
-    padding: 20px 5%;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  background-image: url(https://wallpaperaccess.com/full/3819326.jpg);
+  padding: 20px 5%;
 }
 
 .work h2 {
-    min-width: 20%;
-    border-right: 5px solid white;
-    margin:15px;
-    text-align: right;
-    padding-right: 15px;
+  min-width: 20%;
+  border-right: 5px solid white;
+  margin: 15px;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .work .content {
-    min-width: 75%;
-    margin:15px;
+  min-width: 75%;
+  margin: 15px;
 }
 .projects {
-    display:flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .projects .project a {
-    display:inline-block;
-    width:100%;
-    height: 100%;
-    position:relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-    
+
 .projects div {
-    background-color:rgb(178, 231, 231);
-    height:40%;
-    font-size:20px;
-    position: absolute; bottom:20px;
+  background-color: rgb(178, 231, 231);
+  height: 40%;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
 }
-    
+
+.projects li {
+  list-style-type: none;
+}
+
+.projects li {
+  width: 40%;
+  height: 300px;
+  margin: 5px;
+}
+.projects .project.project1 {
+  height: 300px;
+  width: 825px;
+  align-self: center;
+}
+
 .project div {
     width: 30%;
     padding-left: 15px;
     margin-left: 15px;
-    font-style:bold;
+    font-style: bold;
+    margin-bottom: 30px;
+}
+  
+  /* Background images for A tags. I was originally planning to use different background images */
+
+.projects .project.project1 a {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
 }
 
-.projects li {
-   list-style-type: none;
+.projects .project.project2 a {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
 }
 
-.projects li {
-    width:45%;
-    height: 200px;
-    margin:5px;
+.projects .project.project3 a {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
 }
 
-.projects .project.project1 a{
-    background-image:url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
+.projects .project.project4 a {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
 }
 
-.projects .project.project2 a{
-    background-image:url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
+.projects .project.project5 a {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
 }
-
-.projects .project.project3 a{
-    background-image:url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
-}
-
-.projects .project.project4 a{
-    background-image:url(https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629__340.jpg);
-}
-
+/* Styling for ContactMe Section */
 .contact {
-    display:flex;
-    width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    background-color: black;
-    padding: 20px 5%;
-    }
-
-.contact h2{
-    min-width: 20%;
-    margin:15px;
-    padding-right: 15px;
-    border-right: 5px solid white;
-    text-align: right;
+  display: flex;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  background-color: black;
+  padding: 20px 5%;
 }
-    
+
+.contact h2 {
+  min-width: 18%;
+  margin: 15px;
+  padding-right: 15px;
+  border-right: 5px solid white;
+  text-align: right;
+}
+
 .contact nav {
-    display: flex;
-    padding-top: 15px;
-    margin:auto;
-    color:rgb(253, 153, 240);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    }
-    
+  display: flex;
+  padding-top: 15px;
+  margin: auto;
+  color: rgb(253, 153, 240);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
 .contact nav ul {
-    list-style-type: none;
-    }
-    
+  list-style-type: none;
+}
+
 .contact nav ul li {
-    display: inline;
-    margin-left: 25px;
-    }
+  display: inline;
+  margin-left: 25px;
+}
 
-
+/* Styling for Footer Section */
 Footer {
-    text-align:center;
-    font-size:40px;
-    color:black;
+  text-align: center;
+  font-size: 40px;
+  color: black;
 }
-@media (max-width:700px){
-    .bioArea {
-        flex-direction: column;
-    }
-    .bioArea h2 {
-        text-align: center;
-        min-width:90%;
-        margin: 15px auto;
-        border-right: none;
-        border-bottom: 5px solid white;
-    }
-    .work {
-        flex-direction: column;
-    }
-    .work h2{
-        text-align: center;
-        min-width:90%;
-        margin: 15px auto;
-        border-right: none;
-        border-bottom: 5px solid white;
-    }
+/* Media Query for formatiing on different viewports 
 
+@media (max-width: 700px) {
+    .links li {
+       flex-direction: column; 
+    }
+}  */ 
+@media (max-width: 700px) {
+  .bioArea {
+    flex-direction: column;
+  }
+  .bioArea h2 {
+    text-align: center;
+    min-width: 90%;
+    margin: 15px auto;
+    border-right: none;
+    border-bottom: 5px solid white;
+  }
+  .work {
+    flex-direction: column;
+  }
+  .work h2 {
+    text-align: center;
+    min-width: 90%;
+    margin: 15px auto;
+    border-right: none;
+    border-bottom: 5px solid white;
+  }
 }
-@media (max-width:600px){
-    .projects li{
-        width: 90%;
-        margin:15px auto;
-    }
-}
-@media (max-width:1100px){
-    .contact {
-        flex-direction: column;
-    }
-    .contact h2{
-        text-align: center;
-        min-width:90%;
-        margin: 15px auto;
-        border-right: none;
-    }
 
+@media (max-width: 600px) {
+  .projects li {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact h2 {
+    text-align: center;
+    min-width: 90%;
+    margin: 15px auto;
+    border-right: none;
+  }
 }
