@@ -110,7 +110,7 @@ header h1 {
 
 .projects a:hover div {
 opacity: .6;
-background-color: aqua;
+background-color:orange;
 }
 
 .projects div {
